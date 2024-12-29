@@ -1,8 +1,8 @@
 FROM node:20
 EXPOSE 8080
-#ENV DB_HOST="mysql"
+ENV DB_HOST="mysql"
 #to check host network changing to local host
-ENV DB_HOST="localhost"
+#ENV DB_HOST="localhost"
 RUN mkdir /opt/server
 WORKDIR /opt/server
 COPY package.json .
